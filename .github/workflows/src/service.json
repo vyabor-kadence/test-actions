@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "ksf-lucious",
+  "private_key_id": "929cd52da4654da8d7487660e25ad0d9d7c94448",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC3EghXb+CIjkxs\noUApSsoJMuRcvnCsq/biqmH56o4ilq8shKuTyjT2CHSTU378tnmWj8sdY5rPZCN6\nyhKgiDDhAb28s1ddoVuF6xv0YnVogYpDMlLHZa+lVIGq4sI8oh+uxcquvCh2sgCI\nQ3x4t1HgcY0FzoL9VicBRq6QhyG5TOC0/suxybE9WAYPOIJfUfQgJwSX5GnMojkc\nYX6+z3exEEz5/ZUdrjn84LPqxmg0wbiqFB+GOAoOxQd6npy2W6RfwDhzlCuFTIQ6\nbjcxao6oDb8gRhsicN2z9H9/ScagZ4aOw1C6Ymw5OmitIV2xZ/kNKQgTf+sgdClH\nJjCbx/odAgMBAAECggEAA0munqtis/EiTD0lIti2Ai5IzaWZ7m/0MiPvOIbO4K4m\nHT2Qu0nBY73JIjA4sp8wVdTlR/TW/eyFepoQdZOclR3r42yxH/xa4W/Ug7IU+7h/\n3C8WL4CTA/wdjA0ggehDe2cP+c1lSKRvwAK+RIi+TrKbXsRTs+sNLkevsObMY0CH\nWWt4PVK2F8pxLrKU2wYr4Nd2EE3MPamtrvXLgluJBk0qrxRHVA+TZ3a3EAZiRm65\nBhJcZWoVebSCsY/SexjQ4xC3R/ua6ZEkT35RGanhgnUigDI6r5p1WfKiG+nydxrS\nrfROZ6LhbVUTMEXM9km+GhsngfL4OZ7h9UMuwkGWYQKBgQD54nFGy7G2H6NiJOM1\nFVK9EM66WPjpsKnRLsncWmlIUymdv1P9R114b+SbdTehOxh9aipkivL4bdCitZ94\n8rvNNJelwdb3qHXUsX28pC6MZghXjpFRHnzIx8cQrC6zYI78dIYw/UiwgO+vASS7\n2wKLA8yN73sGvHCxVbbmhleUmQKBgQC7jP3TBvJ65eihDrUZm/1HXqjJUXAO6HCb\n/V2tO+8g1GXtKexHEe6Pu/B0FYrMBIlgfLrdnPyqJMOWIHPt11o+SlkAKdMxbsVP\n6c8SX1h2w/J9rrFVsC8I3yF1Ow8/ZBskXCUe4ZQsVvWRk2lVCjnYNeS3q9qoqq2l\nlkVOjkuAJQKBgQDeyFkPsjkdU3W54YND51/duidlEj/RMTUlj15e+6hT1/kJb/P0\novSdlLyvMMFJGMPLxKRJAWx/uoBBIEYucdKnsBTnrjr2kBWFbDzau1HY0HrtfOjn\n9pNv+lTq82erexHf2A9vi9GLs1h9oTpb1XWd9OQhQvpfVg/uuqmXOvzIOQKBgQCH\nR+OuW8x7qWprAdjPaB0BZd4JmJxjpHXVjqQLWLfbzljXAO5VNTIGq2F92iwLjRoq\nZs3DHIGDmJEbsLzuSe/mDmq0G3ciqOvaAKREdFGzGRPIZEG1tSe4FnpjvP36k5Kg\nX3bHF59xfCgVoWbQ2FdxBS687VEDaFlon0POrgT3oQKBgQCYzKVcPiYvwqx9gdD5\nLsERJ3Os5jUb87hnBy26WAdyt/h4NXIJZx3MzcAgM0wm081AzJlgy8h3Ga+QRRWB\nM6FIGnH/V791t8LyaJjc97d1lKmsMP6ttnab3xCWYK+CW8fk22dfeNmaVqGZMD6b\nbyozVduk/00ulwSYdj5ZSMSVZg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "ksf-lucious@ksf-lucious.iam.gserviceaccount.com",
+  "client_id": "105810978689018811150",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/ksf-lucious%40ksf-lucious.iam.gserviceaccount.com"
+}
