@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
-credentials = service_account.Credentials.from_service_account_file(filename = 'service.json', scopes = scope)
+credentials = service_account.Credentials.from_service_account_file(filename = 'src/service.json', scopes = scope)
 
 gc = gspread.authorize(credentials)
 
