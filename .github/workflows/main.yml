@@ -1,5 +1,8 @@
 name: temp google sheet update
 
+env:
+  SERVICE: ${{ secrets.SERVICE_JSON }}
+
 on:
   push:
   schedule:
