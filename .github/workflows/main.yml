@@ -17,7 +17,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Set up environment
         run: |
-          echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > secret_service.json
+          echo tmp = ${{ secrets.SERVICE_BASE64 }} | base64 -d > secret_service.json
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
