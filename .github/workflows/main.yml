@@ -1,7 +1,7 @@
 name: temp google sheet update
 
 env:
-  SERVICE: ${{ secrets.SERVICE_JSON }}
+  SERVICE: ${{ secrets.SERVICE_BASE64 }}
 
 on:
   push:
@@ -21,7 +21,7 @@ jobs:
           python-version: 3.7
       - name: Install dependencies and run script
         run: |
-          echo ${{ secrets.SERVICE_JSON }} > secret_service.json
+          echo ${{ secrets.SERVICE_BASE64 }} > secret_service.json
           python -m pip install --upgrade pip
           pip install pipenv 
           pipenv install
