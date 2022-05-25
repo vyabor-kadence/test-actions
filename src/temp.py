@@ -2,9 +2,12 @@ import gspread
 import pandas as pd
 from google.oauth2 import service_account
 
+service = os.environ["SERVICE"]
+
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
-credentials = service_account.Credentials.from_service_account_file(filename = 'src/service.json', scopes = scope)
+# credentials = service_account.Credentials.from_service_account_file(filename = 'src/service.json', scopes = scope)
+credentials = service_account.Credentials.from_service_account_file(filename = service, scopes = scope)
 
 gc = gspread.authorize(credentials)
 
