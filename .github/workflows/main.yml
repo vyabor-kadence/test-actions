@@ -29,3 +29,4 @@ jobs:
           pipenv install pandas
           pipenv install google
           pipenv run python src/temp.py
+          rm secret_service.json
