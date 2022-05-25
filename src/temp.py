@@ -1,6 +1,7 @@
 import gspread
 import pandas as pd
 from google.oauth2 import service_account
+import os
 
 service = os.environ["SERVICE"]
 
