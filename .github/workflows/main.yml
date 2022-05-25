@@ -16,7 +16,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Set up environment
-        run: echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > secret_service.json
+        run: |
+          echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > secret_service.json
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
