@@ -15,13 +15,14 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - name: Set up environment
+        run: echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > secret_service.json
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
       - name: Install dependencies and run script
         run: |
-          echo ${{ secrets.SERVICE_BASE64 }} > secret_service.json
           python -m pip install --upgrade pip
           pip install pipenv 
           pipenv install
@@ -29,4 +30,3 @@ jobs:
           pipenv install pandas
           pipenv install google
           pipenv run python src/temp.py
-          rm secret_service.json
