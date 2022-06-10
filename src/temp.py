@@ -5,7 +5,7 @@ import yaml
 import os
 
 os.getcwd()
-secret_service = os.getenv(["secrets.json"])
+secret_service = os.getenv("secrets.json")
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
