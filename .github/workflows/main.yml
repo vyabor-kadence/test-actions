@@ -21,4 +21,4 @@ jobs:
           echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
           cat secrets.json  
           pip install -r requirements.txt
-          pip run python src/temp.py
+          python src/temp.py
