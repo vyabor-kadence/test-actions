@@ -7,8 +7,8 @@ import os
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
-credentials = service_account.Credentials.from_service_account_file(filename = '../src/service.json', scopes = scope)
-# credentials = service_account.Credentials.from_service_account_file(filename = "../.github/workflows/secret_service.json", scopes = scope)
+# credentials = service_account.Credentials.from_service_account_file(filename = '../src/service.json', scopes = scope)
+credentials = service_account.Credentials.from_service_account_file(filename = "../.github/workflows/secret_service.json", scopes = scope)
 
 gc = gspread.authorize(credentials)
 
