@@ -1,8 +1,5 @@
 name: temp google sheet update
 
-env:
-  SERVICE: ${{ secrets.TEST64 }} | base64 -d
-
 on:
   push:
   schedule:
@@ -22,13 +19,9 @@ jobs:
           touch secrets.json
           echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
           cat secrets.json  
-          echo hello
-          printenv
           python -m pip install --upgrade pip
           pip install pipenv 
           pipenv install
           pipenv install gspread
-          pipenv install pandas
           pipenv install google
-          pipenv install pyyaml
           pipenv run python src/temp.py
