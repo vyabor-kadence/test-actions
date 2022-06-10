@@ -14,10 +14,10 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.7
+          cache: 'pip'
       - name: Install dependencies and run script
         run: |
           touch secrets.json
           echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
-          cat secrets.json  
           pip install -r requirements.txt
           python src/temp.py
