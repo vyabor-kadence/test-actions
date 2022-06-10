@@ -2,6 +2,8 @@ name: temp google sheet update
 
 env:
   SERVICE: ${{ secrets.SERVICE_BASE64 }} | base64 -d
+  run: |
+    echo $SERVICE > service.json
 
 on:
   push:
