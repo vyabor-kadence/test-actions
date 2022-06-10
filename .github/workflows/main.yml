@@ -2,10 +2,6 @@ name: temp google sheet update
 
 env:
   SERVICE: ${{ secrets.TEST64 }} | base64 -d
-  run: |
-    touch secrets.json
-    echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
-    cat secrets.json
 
 on:
   push:
@@ -14,12 +10,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    env:
-      run: |
-        touch secrets.json
-        echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
-        cat secrets.json    
+    runs-on: ubuntu-latest 
     steps:
       - uses: actions/checkout@v2
       - name: Set up Python
@@ -28,6 +19,10 @@ jobs:
           python-version: 3.7
       - name: Install dependencies and run script
         run: |
+          touch secrets.json
+          echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
+          cat secrets.json  
+          echo hello
           printenv
           python -m pip install --upgrade pip
           pip install pipenv 
