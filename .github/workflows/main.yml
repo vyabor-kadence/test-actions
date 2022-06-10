@@ -17,5 +17,3 @@ jobs:
       - name: Install dependencies and run script
         run: |
           echo "SERVICE" > secret
-          #echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > service.json
-          # echo "$(<service.json )"
