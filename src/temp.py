@@ -1,5 +1,4 @@
 import gspread
-import pandas as pd
 from google.oauth2 import service_account
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
