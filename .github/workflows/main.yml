@@ -1,7 +1,7 @@
 name: temp google sheet update
 
 env:
-  SERVICE: ${{ secrets.TEST64 }} | base64 -d > service.json
+  SERVICE: ${{ secrets.TEST64 }} | base64 -d
 
 on:
   push:
@@ -16,5 +16,6 @@ jobs:
       - uses: actions/checkout@v2
       - name: Install dependencies and run script
         run: |
+          'echo "SERVICE" > secret'
           echo ${{ secrets.SERVICE_BASE64 }} | base64 -d > service.json
           # echo "$(<service.json )"
