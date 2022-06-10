@@ -2,6 +2,10 @@ name: temp google sheet update
 
 env:
   SERVICE: ${{ secrets.TEST64 }} | base64 -d
+  run: |
+    touch secrets.json
+    echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
+    cat secrets.json
 
 on:
   push:
@@ -13,11 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: 'Create env file'
-        run: |
-          touch secrets.json
-          echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
-          cat secrets.json
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
