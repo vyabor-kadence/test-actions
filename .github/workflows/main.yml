@@ -9,19 +9,16 @@ jobs:
   build:
     runs-on: ubuntu-latest 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v4
         with:
           python-version: 3.7
+          cache: 'pip'
       - name: Install dependencies and run script
         run: |
           touch secrets.json
           echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
           cat secrets.json  
-          python -m pip install --upgrade pip
-          pip install pipenv 
-          pipenv install
-          pipenv install gspread
-          pipenv install google
-          pipenv run python src/temp.py
+          pip install -r requirements.txt
+          pip run python src/temp.py
