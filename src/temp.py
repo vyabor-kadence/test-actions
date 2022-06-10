@@ -5,7 +5,7 @@ import yaml
 import os
 
 os.getcwd()
-service = os.environ["service.json"]
+secret_service = os.environ["service"]
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
@@ -13,7 +13,7 @@ scope = ['https://www.googleapis.com/auth/spreadsheets']
 #with open(r'.github/workflows/main.yml') as file:
 #    y = yaml.safe_load(file)
 #globals().update(y)
-credentials = service_account.Credentials.from_service_account_file(filename = service, scopes = scope)
+credentials = service_account.Credentials.from_service_account_file(filename = secret_service, scopes = scope)
 
 gc = gspread.authorize(credentials)
 
