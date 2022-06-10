@@ -5,7 +5,7 @@ import yaml
 import os
 
 os.getcwd()
-secret_service = os.environ["SERVICE"]
+secret_service = os.environ["SECRET.json"]
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
