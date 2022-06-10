@@ -1,14 +1,19 @@
 import gspread
 import pandas as pd
 from google.oauth2 import service_account
+import yaml
 import os
 
-#service = os.environ["SERVICE"]
+os.getcwd()
+service = os.environ["SERVICE"]
 
 scope = ['https://www.googleapis.com/auth/spreadsheets']
 
 # credentials = service_account.Credentials.from_service_account_file(filename = '../src/service.json', scopes = scope)
-credentials = service_account.Credentials.from_service_account_file(filename = "../.github/workflows/secret_service.json", scopes = scope)
+with open(r'.github/workflows/main.yml') as file:
+    y = yaml.safe_load(file)
+globals().update(y)
+credentials = service_account.Credentials.from_service_account_file(filename = service, scopes = scope)
 
 gc = gspread.authorize(credentials)
 
