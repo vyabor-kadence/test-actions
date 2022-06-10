@@ -4,6 +4,7 @@ from google.oauth2 import service_account
 import yaml
 import os
 
+secrets.json
 os.getcwd()
 secret_service = os.environ["secrets.json"]
 print(secret_service)
