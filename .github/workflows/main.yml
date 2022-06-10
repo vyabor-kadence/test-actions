@@ -17,3 +17,4 @@ jobs:
       - name: Install dependencies and run script
         run: |
           echo "$(<service.json )"
+          echo $SERVICE
