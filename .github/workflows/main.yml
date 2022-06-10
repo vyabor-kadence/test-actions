@@ -8,19 +8,22 @@ on:
   schedule:
     - cron: "*/5 * * * *"
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - name: 'Create env file'
+        run: |
+          touch secrets.json
+          echo ${{ secrets.TEST64 }} | base64 -d >> secrets.json
+          cat secrets.json
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
           python-version: 3.7
       - name: Install dependencies and run script
         run: |
-          echo $SERVICE > SECRET.json
           python -m pip install --upgrade pip
           pip install pipenv 
           pipenv install
