@@ -21,3 +21,4 @@ jobs:
           echo ${{ secrets.SERVICE_BASE64 }} | base64 -d >> secrets.json
           pip install -r requirements.txt
           python src/temp.py
+
